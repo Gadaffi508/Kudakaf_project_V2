@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Eyes
+    uniqueID: 1914385031
+    locked: 0
+  - name: Backgrounds
+    uniqueID: 1995593973
+    locked: 0
