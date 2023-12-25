@@ -9,10 +9,22 @@ public class PlayerController : MonoBehaviour
 
     [Header("Controller Value")]
     public float speed;
-    public float jumpHeight;
+    public bool isFlyCharecter = false;
+
+    [Header("Dash Controller")]
     public float dashForce;
-    [Range(0,1)]
+    [Range(0, 1)]
     public float dashTime;
+
+    [Header("Jump Controller")]
+    public float jumpHeight;
+    public Transform GroundCheck;
+    public float GroundRadius;
+    public LayerMask GroundLayer;
+    public bool isJump = true;
+
+    //<-----Controlls----------->
+    private bool dashPressed = false;
 
     //<-----Get Components------>
     Rigidbody2D rb;
@@ -43,6 +55,36 @@ public class PlayerController : MonoBehaviour
         player_Ýd = playerInput.playerIndex;
     }
 
+    private void Update()
+    {
+        bool GroundCol = Physics2D.OverlapCircle(GroundCheck.position, GroundRadius, GroundLayer);
+        if (GroundCol) isJump = true;
+
+        if (isJump == true && ýnputJumpButton)
+        {
+            rb.AddForce(Vector2.up * jumpHeight);
+            isJump = false;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        rb.velocity = PlayerMoveVelocity();
+    }
+
+
+    private Vector2 PlayerMoveVelocity()
+    {
+        if (isFlyCharecter == true) return new Vector2(ýnputMove.x * speed * Time.deltaTime, ýnputMove.y * speed * Time.deltaTime);
+
+        else return new Vector2(ýnputMove.x * speed * Time.deltaTime, rb.velocity.y);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(GroundCheck.position, GroundRadius);
+    }
 
     public void OnMove(InputAction.CallbackContext ctx) => ýnputMove = ctx.ReadValue<Vector2>();
     public void OnCursor(InputAction.CallbackContext ctx) => ýnputCursorRotate = ctx.ReadValue<Vector2>();
