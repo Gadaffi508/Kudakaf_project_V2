@@ -590,9 +590,9 @@ MonoBehaviour:
   isFlyCharecter: 0
   dashForce: 1.1
   dashTime: 0.5
-  jumpHeight: 75
+  jumpHeight: 200
   GroundCheck: {fileID: 1075953910}
-  GroundRadius: 0.05
+  GroundRadius: 0.003
   GroundLayer:
     serializedVersion: 2
     m_Bits: 64

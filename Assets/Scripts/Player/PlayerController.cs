@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
     PlayerInput playerInput;
+    string[] joystickNames;
 
     //<-----Input Actions------>
 #if UNITY_EDITOR
@@ -45,6 +46,7 @@ public class PlayerController : MonoBehaviour
     private bool ýnputDownButton;
     private bool ýnputPunchButton;
     private bool ýnputExplodeButton;
+    private float Horizontal, Vertical;
 #endif
 
     private void Start()
@@ -53,18 +55,23 @@ public class PlayerController : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         playerInput = GetComponent<PlayerInput>();
         player_Ýd = playerInput.playerIndex;
+
+        joystickNames = Input.GetJoystickNames();
     }
 
     private void Update()
     {
         bool GroundCol = Physics2D.OverlapCircle(GroundCheck.position, GroundRadius, GroundLayer);
-        if (GroundCol) isJump = true;
 
-        if (isJump == true && ýnputJumpButton)
+        if (isJump is true && ýnputJumpButton || Input.GetKeyDown(KeyCode.Space) && isJump is true)
         {
             rb.AddForce(Vector2.up * jumpHeight);
             isJump = false;
         }
+        else if (GroundCol) isJump = true;
+
+        Horizontal = Input.GetAxis("Horizontal");
+        Vertical = Input.GetAxis("Vertical");
     }
 
     private void FixedUpdate()
@@ -72,12 +79,24 @@ public class PlayerController : MonoBehaviour
         rb.velocity = PlayerMoveVelocity();
     }
 
+    float moveValueX, moveValueY;
 
     private Vector2 PlayerMoveVelocity()
     {
-        if (isFlyCharecter == true) return new Vector2(ýnputMove.x * speed * Time.deltaTime, ýnputMove.y * speed * Time.deltaTime);
 
-        else return new Vector2(ýnputMove.x * speed * Time.deltaTime, rb.velocity.y);
+        if (joystickNames is not null)
+        {
+            moveValueX = ýnputMove.x;
+            moveValueY = ýnputMove.y;
+        }
+        else
+        {
+            moveValueX = Horizontal;
+            moveValueY = Vertical;
+        }
+
+        if(isFlyCharecter is true) return new Vector2(moveValueX * speed * Time.deltaTime, moveValueY * speed * Time.deltaTime);
+        else return new Vector2(Horizontal * speed * Time.deltaTime, rb.velocity.y);
     }
 
     private void OnDrawGizmos()
