@@ -1,0 +1,563 @@
+fileFormatVersion: 2
+guid: ad51554fab60fee4b84ae6c117878f8e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 11
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1751e3533bf87004f8952d9da1d14da8
+      internalID: 1934881279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 11
+        width: 18
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838c880b4805f944da7dcb54c4eb8d81
+      internalID: -1982880063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 11
+        width: 18
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96bbbfe4a267c654c804597f24f00f59
+      internalID: -1654274511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 11
+        width: 18
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e7748d364a9bb4fb694f16fac4111a
+      internalID: -18754017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 11
+        width: 18
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6b269b1bfc4b2498961936c236f71a
+      internalID: -1553561811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 11
+        width: 18
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4137b9ea47dc0047b5b55a84b4a22c8
+      internalID: -285617590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 11
+        width: 18
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9c97e43633d0c4bbb5a20b5a774dde
+      internalID: 1307314478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 11
+        width: 18
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7c3ec6f1c0c5b4dbdb89d21d3244f8
+      internalID: 1488456395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 11
+        width: 18
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b485f721f5ab04c9f934ceae873af4
+      internalID: 987308286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 11
+        width: 18
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3116ff57b6045464fb8a86c31f2004d2
+      internalID: -1471427898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 11
+        width: 18
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1270a965d3cbd0b40876a1cdaaf3244b
+      internalID: -1252834630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 11
+        width: 18
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac2b472da4682f469ab6833d59db1fd
+      internalID: -398678201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 11
+        width: 18
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf37b813df159dd40a9b98bf0204e947
+      internalID: 1229690393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 11
+        width: 18
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6da7744992c534b8cc2887f04d41b5
+      internalID: -1187505113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 11
+        width: 18
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e9e41033a517748b8d22c7f0738195
+      internalID: -1933863782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 11
+        width: 18
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362039598d34bb9499d041a7e01ed4ce
+      internalID: -1436791220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 11
+        width: 18
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db4ea24a2396ff46a8437b791850554
+      internalID: 1685570025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 11
+        width: 18
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9ed5a693885e44da81ca8b3b74f2a4
+      internalID: 1501682842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 11
+        width: 18
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab239f8f4c936f64bb14c527edc35925
+      internalID: -532946273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tac2v.2-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 11
+        width: 18
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c818c9bccbad3554299be449c91a408f
+      internalID: 2090175638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tac2v.2-Sheet_0: 1934881279
+      Tac2v.2-Sheet_1: -1982880063
+      Tac2v.2-Sheet_10: -1252834630
+      Tac2v.2-Sheet_11: -398678201
+      Tac2v.2-Sheet_12: 1229690393
+      Tac2v.2-Sheet_13: -1187505113
+      Tac2v.2-Sheet_14: -1933863782
+      Tac2v.2-Sheet_15: -1436791220
+      Tac2v.2-Sheet_16: 1685570025
+      Tac2v.2-Sheet_17: 1501682842
+      Tac2v.2-Sheet_18: -532946273
+      Tac2v.2-Sheet_19: 2090175638
+      Tac2v.2-Sheet_2: -1654274511
+      Tac2v.2-Sheet_3: -18754017
+      Tac2v.2-Sheet_4: -1553561811
+      Tac2v.2-Sheet_5: -285617590
+      Tac2v.2-Sheet_6: 1307314478
+      Tac2v.2-Sheet_7: 1488456395
+      Tac2v.2-Sheet_8: 987308286
+      Tac2v.2-Sheet_9: -1471427898
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

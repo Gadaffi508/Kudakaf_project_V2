@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3c51bdcc18d9b14ab3ebadc3b33aed4, type: 3}
-  m_Name: Fire Players
+  m_Name: Banana Player
   m_EditorClassIdentifier: 
-  anim: {fileID: 9100000, guid: 6f2de84cec2e56b489c092f2c22ebb9d, type: 2}
+  anim: {fileID: 9100000, guid: 24c1c7f0bc93e3740a13b06bb575c4da, type: 2}
   CursorImage: {fileID: 0}
-  isFly: 1
-  CurrentPlayer: {fileID: 1923009838, guid: 5fca5f53b463e4545ac7d841595576b2, type: 3}
+  isFly: 0
+  CurrentPlayer: {fileID: -1027808823, guid: b185a5ebaab1b5643b6a801d063919f2, type: 3}
   Angle: 0
