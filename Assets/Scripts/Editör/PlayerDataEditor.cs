@@ -22,7 +22,7 @@ public class PlayerDataEditor : Editor
 
         EditorGUILayout.Space();
 
-        if (GUILayout.Button("Player"))
+        if (GUILayout.Button("Angle Plus"))
         {
             playerData.Angle += 10;
         }

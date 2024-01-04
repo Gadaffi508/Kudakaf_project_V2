@@ -11,15 +11,26 @@ public class PlayerSpriteManager : MonoBehaviour
 
     internal int LocalX = 1;
     public int Direct = 1;
+    public bool isFirePlayer = false;
 
+    private PlayerController _playerController;
+    
     private void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponentInParent<Rigidbody2D>();
+        _playerController = GetComponentInParent<PlayerController>();
+        isFirePlayer = _playerController.isFlyCharecter;
     }
 
     private void Update()
     {
+        if (isFirePlayer)
+        {
+            anim.SetFloat("Horizontal", rb.velocity.x);
+            anim.SetFloat("Vertical", rb.velocity.y);
+        }
+        
         anim.SetFloat("speed", Math.Abs(rb.velocity.x + rb.velocity.y));
         Flip();
     }

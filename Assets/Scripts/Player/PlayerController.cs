@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public int player_Ýd;
+    public int player_id;
 
     [Header("Controller Value")]
     public float speed;
@@ -34,18 +34,18 @@ public class PlayerController : MonoBehaviour
 
     //<-----Input Actions------>
 #if UNITY_EDITOR
-    Vector2 ýnputMove;
-    Vector2 ýnputCursorRotate;
-    private bool ýnputJumpButton;
-    private bool ýnputDashButton;
-    private bool ýnputRunButton;
-    private bool ýnputFireButton;
-    private bool ýnputLeftButton;
-    private bool ýnputRightButton;
-    private bool ýnputUpButton;
-    private bool ýnputDownButton;
-    private bool ýnputPunchButton;
-    private bool ýnputExplodeButton;
+    Vector2 inputMove;
+    Vector2 inputCursorRotate;
+    private bool inputJumpButton;
+    private bool inputDashButton;
+    private bool inputRunButton;
+    private bool inputFireButton;
+    private bool inputLeftButton;
+    private bool inputRightButton;
+    private bool inputUpButton;
+    private bool inputDownButton;
+    private bool inputPunchButton;
+    private bool inputExplodeButton;
     private float Horizontal, Vertical;
 #endif
 
@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
         playerInput = GetComponent<PlayerInput>();
-        player_Ýd = playerInput.playerIndex;
+        player_id = playerInput.playerIndex;
 
         joystickNames = Input.GetJoystickNames();
     }
@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
     {
         bool GroundCol = Physics2D.OverlapCircle(GroundCheck.position, GroundRadius, GroundLayer);
 
-        if (isJump is true && ýnputJumpButton || Input.GetKeyDown(KeyCode.Space) && isJump is true)
+        if (isJump is true && inputJumpButton || Input.GetKeyDown(KeyCode.Space) && isJump is true)
         {
             rb.AddForce(Vector2.up * jumpHeight);
             isJump = false;
@@ -84,10 +84,10 @@ public class PlayerController : MonoBehaviour
     private Vector2 PlayerMoveVelocity()
     {
 
-        if (joystickNames is not null)
+        if (joystickNames  != null)
         {
-            moveValueX = ýnputMove.x;
-            moveValueY = ýnputMove.y;
+            moveValueX = inputMove.x;
+            moveValueY = inputMove.y;
         }
         else
         {
@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour
             moveValueY = Vertical;
         }
 
-        if(isFlyCharecter is true) return new Vector2(moveValueX * speed * Time.deltaTime, moveValueY * speed * Time.deltaTime);
+        if(isFlyCharecter  == true) return new Vector2(Horizontal * speed * Time.deltaTime, Vertical * speed * Time.deltaTime);
         else return new Vector2(Horizontal * speed * Time.deltaTime, rb.velocity.y);
     }
 
@@ -105,16 +105,16 @@ public class PlayerController : MonoBehaviour
         Gizmos.DrawWireSphere(GroundCheck.position, GroundRadius);
     }
 
-    public void OnMove(InputAction.CallbackContext ctx) => ýnputMove = ctx.ReadValue<Vector2>();
-    public void OnCursor(InputAction.CallbackContext ctx) => ýnputCursorRotate = ctx.ReadValue<Vector2>();
-    public void OnJump(InputAction.CallbackContext ctx) => ýnputJumpButton = ctx.ReadValueAsButton();
-    public void OnDash(InputAction.CallbackContext ctx) => ýnputDashButton = ctx.ReadValueAsButton();
-    public void OnRun(InputAction.CallbackContext ctx) => ýnputRunButton = ctx.ReadValueAsButton();
-    public void OnFire(InputAction.CallbackContext ctx) => ýnputFireButton = ctx.ReadValueAsButton();
-    public void OnLeft(InputAction.CallbackContext ctx) => ýnputLeftButton = ctx.ReadValueAsButton();
-    public void OnRight(InputAction.CallbackContext ctx) => ýnputRightButton = ctx.ReadValueAsButton();
-    public void OnUp(InputAction.CallbackContext ctx) => ýnputUpButton = ctx.ReadValueAsButton();
-    public void OnDown(InputAction.CallbackContext ctx) => ýnputDownButton = ctx.ReadValueAsButton();
-    public void OnPunch(InputAction.CallbackContext ctx) => ýnputPunchButton = ctx.ReadValueAsButton();
-    public void OnExplode(InputAction.CallbackContext ctx) => ýnputExplodeButton = ctx.ReadValueAsButton();
+    public void OnMove(InputAction.CallbackContext ctx) => inputMove = ctx.ReadValue<Vector2>();
+    public void OnCursor(InputAction.CallbackContext ctx) => inputCursorRotate = ctx.ReadValue<Vector2>();
+    public void OnJump(InputAction.CallbackContext ctx) => inputJumpButton = ctx.ReadValueAsButton();
+    public void OnDash(InputAction.CallbackContext ctx) => inputDashButton = ctx.ReadValueAsButton();
+    public void OnRun(InputAction.CallbackContext ctx) => inputRunButton = ctx.ReadValueAsButton();
+    public void OnFire(InputAction.CallbackContext ctx) => inputFireButton = ctx.ReadValueAsButton();
+    public void OnLeft(InputAction.CallbackContext ctx) => inputLeftButton = ctx.ReadValueAsButton();
+    public void OnRight(InputAction.CallbackContext ctx) => inputRightButton = ctx.ReadValueAsButton();
+    public void OnUp(InputAction.CallbackContext ctx) => inputUpButton = ctx.ReadValueAsButton();
+    public void OnDown(InputAction.CallbackContext ctx) => inputDownButton = ctx.ReadValueAsButton();
+    public void OnPunch(InputAction.CallbackContext ctx) => inputPunchButton = ctx.ReadValueAsButton();
+    public void OnExplode(InputAction.CallbackContext ctx) => inputExplodeButton = ctx.ReadValueAsButton();
 }

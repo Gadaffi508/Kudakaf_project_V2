@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Banana Player
   m_EditorClassIdentifier: 
   anim: {fileID: 9100000, guid: 24c1c7f0bc93e3740a13b06bb575c4da, type: 2}
-  CursorImage: {fileID: 0}
+  CursorImage: {fileID: 1033963729, guid: f65153944ceec9f47824c7eb4878c0e5, type: 3}
   isFly: 0
   CurrentPlayer: {fileID: -1027808823, guid: b185a5ebaab1b5643b6a801d063919f2, type: 3}
   Angle: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fire Players
   m_EditorClassIdentifier: 
   anim: {fileID: 9100000, guid: 6f2de84cec2e56b489c092f2c22ebb9d, type: 2}
-  CursorImage: {fileID: 0}
+  CursorImage: {fileID: 1033963729, guid: f65153944ceec9f47824c7eb4878c0e5, type: 3}
   isFly: 1
   CurrentPlayer: {fileID: 1923009838, guid: 5fca5f53b463e4545ac7d841595576b2, type: 3}
-  Angle: 0
+  Angle: 30
