@@ -22,9 +22,12 @@ public class GunsManager : MonoBehaviour
     {
         if (other.gameObject.TryGetComponent(out PlayerController player))
         {
-            player.CursorImage.sprite = gunSprite[randomGunNumber];
-            player.charecterType = CharecterType.Gun;
-            Destroy(gameObject);
+            if (player.charecterType == CharecterType.None)
+            {
+                player.CursorImage.sprite = gunSprite[randomGunNumber];
+                player.charecterType = CharecterType.Gun;
+                Destroy(gameObject);
+            }
         }
     }
 }

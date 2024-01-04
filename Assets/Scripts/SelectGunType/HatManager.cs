@@ -12,10 +12,13 @@ public class HatManager : MonoBehaviour
     {
         if (other.gameObject.TryGetComponent(out PlayerController player))
         {
-            player.playerData = playersData[currentPlayerData];
-            player.charecterType = CharecterType.Wizard;
-            player.GetPlayerData();
-            Destroy(gameObject);
+            if (player.charecterType == CharecterType.None)
+            {
+                player.playerData = playersData[currentPlayerData];
+                player.charecterType = CharecterType.Wizard;
+                player.GetPlayerData();
+                Destroy(gameObject);
+            }
         }
     }
 }
