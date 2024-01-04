@@ -1,20 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+
+public enum CharecterType
+{
+    None,
+    Wizard,
+    Gun
+}
 
 public class PlayerController : MonoBehaviour
 {
     public int player_id;
 
+    /// <summary>
+    /// Player wizard Data
+    /// </summary>
+    public PlayerData playerData;
+    public SpriteRenderer CursorImage;
+    public CharecterType charecterType = CharecterType.None;
+    
     [Header("Controller Value")]
     public float speed;
     public bool isFlyCharecter = false;
-
-    [Header("Dash Controller")]
-    public float dashForce;
-    [Range(0, 1)]
-    public float dashTime;
 
     [Header("Jump Controller")]
     public float jumpHeight;
@@ -37,7 +44,6 @@ public class PlayerController : MonoBehaviour
     Vector2 inputMove;
     Vector2 inputCursorRotate;
     private bool inputJumpButton;
-    private bool inputDashButton;
     private bool inputRunButton;
     private bool inputFireButton;
     private bool inputLeftButton;
@@ -54,7 +60,6 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
         playerInput = GetComponent<PlayerInput>();
-        player_id = playerInput.playerIndex;
 
         joystickNames = Input.GetJoystickNames();
     }
@@ -99,6 +104,13 @@ public class PlayerController : MonoBehaviour
         else return new Vector2(Horizontal * speed * Time.deltaTime, rb.velocity.y);
     }
 
+    public void GetPlayerData()
+    {
+        CursorImage.sprite = playerData.CursorImage;
+        anim.runtimeAnimatorController = playerData.anim;
+        isFlyCharecter = playerData.isFly;
+    }
+    
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
@@ -108,7 +120,6 @@ public class PlayerController : MonoBehaviour
     public void OnMove(InputAction.CallbackContext ctx) => inputMove = ctx.ReadValue<Vector2>();
     public void OnCursor(InputAction.CallbackContext ctx) => inputCursorRotate = ctx.ReadValue<Vector2>();
     public void OnJump(InputAction.CallbackContext ctx) => inputJumpButton = ctx.ReadValueAsButton();
-    public void OnDash(InputAction.CallbackContext ctx) => inputDashButton = ctx.ReadValueAsButton();
     public void OnRun(InputAction.CallbackContext ctx) => inputRunButton = ctx.ReadValueAsButton();
     public void OnFire(InputAction.CallbackContext ctx) => inputFireButton = ctx.ReadValueAsButton();
     public void OnLeft(InputAction.CallbackContext ctx) => inputLeftButton = ctx.ReadValueAsButton();

@@ -9,7 +9,12 @@ public class CursorManager : MonoBehaviour
     private void Update()
     {
         transform.rotation = Rotation();
+        
+        if (transform.rotation.eulerAngles.z > 0 && transform.rotation.eulerAngles.z < 180) transform.localScale = GunScale(-1);
+        else transform.localScale = GunScale(1);
     }
+    
+    private Vector3 GunScale(int X) => new Vector3(X, 1, 1f);
 
     private Vector3 MousePos()
     {
