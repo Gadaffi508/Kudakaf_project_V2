@@ -11,7 +11,7 @@ Bu proje, Unity oyun motorunu kullanarak Steam üzerinden çoklu oyunculu bir oy
 
 1. Proje deposunu bilgisayarınıza klonlayın:
     ```bash
-    git clone https://github.com/kullanici/proje-adı.git
+    git clone https://github.com/Gadaffi508/Kudakaf_project_V2.git
     ```
 
 2. Unity'yi açın ve proje klasörünü seçin.
